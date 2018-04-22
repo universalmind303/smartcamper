@@ -1,15 +1,16 @@
 import express from 'express'
 import errorHandler from './errorHandler'
 import middleware from './middleware'
-import relay from './relay'
-import { rpioCloseAll, rpioInitialize } from './gpioController'
+import api from './api'
+import { rpioCloseAll } from './gpioController'
 
 const PORT = process.env.PORT || 8000
 
 const app = express()
 
 app.use(...middleware)
-app.use(api)
+
+app.use('/api', api)
 
 
 // error handling has to come after all other routes.

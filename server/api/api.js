@@ -1,7 +1,9 @@
 import { Router } from 'express'
+import thermostatController from '../thermostat'
 
 const app = Router()
 
-app.use('relay', relayRouter)
 
-app.use('thermostat', thermostatRouter)
+app.use('/thermostat', thermostatController)
+
+export default app

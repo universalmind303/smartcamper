@@ -1,4 +1,4 @@
-import rpio from 'rpio'
+// import rpio from 'rpio'
 
 const GPIOPINS = [
   3,
@@ -19,6 +19,7 @@ const GPIOPINS = [
   24,
   26
 ]
+const rpio = {}
 
 export const togglePin = pin => rpio.read(pin)
 export const rpioReadAll = () => GPIOPINS.map(pin => rpio.read(pin))

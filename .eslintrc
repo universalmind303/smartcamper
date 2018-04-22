@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 6
   },
   "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "plugin:flowtype/recommended"],
   "rules": {
@@ -25,6 +25,7 @@
       2,
       "comma"
     ],
+    "arrow-parens": 0,
     "flowtype/require-parameter-type": 2,
     "flowtype/require-return-type": [
       2,
@@ -56,7 +57,7 @@
     ],
     "flowtype/use-flow-type": 1,
     "flowtype/valid-syntax": 1,
-    "camelcase": [0, {properties: "never"}],
+    "camelcase": [0, {"properties": "never"}],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prop-types": [0],
     "comma-dangle": [0, "always-multiline"],
@@ -120,7 +121,7 @@
     "browser": true,
     "mocha": true,
     "node": true,
-    "jest": true,
+    "jest": true
   },
   "settings": {
     "flowtype": {

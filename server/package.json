@@ -8,21 +8,31 @@
   "dependencies": {
     "apollo-server-express": "^1.2.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-preset-node6": "^11.0.0",
     "babel-register": "^6.26.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
-    "graphql": "^0.11.7",
+    "graphql": "^0.13.2",
     "graphql-tools": "^2.7.2",
+    "module-alias": "^2.0.6",
     "mongodb": "^2.2.33",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0",
-    "rpio": "^0.9.20"
+    "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "nodemon": "^1.12.1"
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.59.0",
+    "nodemon": "^1.17.3"
   }
 }
