@@ -35,7 +35,7 @@ function setPin(mode, pin) {
     : rpio.write(pin, rpio.LOW)
 }
 
-const readAll = () => rpioPINS.map(pin => rpio.read(pin))
+const readAll = () => Object.values(rpioPINS).map(pin => rpio.read(pin))
 const initialize = () => {
   rpio.init({ mock: 'raspi-3' })
   Object.values(rpioPINS).forEach(pin => rpio.open(pin, rpio.OUTPUT, rpio.HIGH))

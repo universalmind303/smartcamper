@@ -27,9 +27,9 @@ const checkTempsCelcius = async (temperature) => {
   } else {
     setHeater(OFF)
   }
-
   return status
 }
+
 export const setTemperature = async (temperature, mode) => {
   const status = mode === CELCIUS
     ? await checkTempsCelcius(temperature)
