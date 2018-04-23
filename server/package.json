@@ -20,7 +20,8 @@
     "module-alias": "^2.0.6",
     "mongodb": "^2.2.33",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
+    "passport-google-oauth20": "^1.0.0",
+    "rpio": "^0.9.21"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",

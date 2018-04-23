@@ -4,7 +4,6 @@ import {
   readTempsCelcius,
   setTemperature
 } from './thermostat'
-// import { readTempsFahrenheit } from '@thermostat'
 
 const router = Router()
 
@@ -13,15 +12,15 @@ router.get('/farenheit', async (req, res) => {
   res.json(temperature)
 })
 
-router.get('/celcius', (req, res) => {
-  const temperature = readTempsCelcius()
+router.get('/celcius', async (req, res) => {
+  const temperature = await readTempsCelcius()
   res.json(temperature)
 })
 
-router.post('', (req, res) => {
+router.post('', async (req, res) => {
   const { temperature, mode } = req.body
   console.log(temperature, mode)
-  setTemperature(temperature)
+  await setTemperature(temperature)
   res.json(temperature)
 })
 

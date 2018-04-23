@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { promisify } from 'util'
-import { TEMPERATURE_PATH } from './constants'
+import { TEMPERATURE_PATH } from '../constants'
 
 const readFileAsync = promisify(fs.readFile)
 
