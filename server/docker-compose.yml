@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+
+  smart-camper-server:
+    container_name: smart-camper-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '7777:7777'
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=development

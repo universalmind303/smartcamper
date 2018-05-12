@@ -1,5 +1,5 @@
 {
-  "name": "mobileClient",
+  "name": "mobile-client",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

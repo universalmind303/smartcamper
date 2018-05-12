@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "author": "Cory Grinstead",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "start": "nodemon ./index.js",
+    "start-prod": "node ./index.js"
   },
   "dependencies": {
     "apollo-server-express": "^1.2.0",
